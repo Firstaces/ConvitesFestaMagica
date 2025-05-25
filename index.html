@@ -1,89 +1,261 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Convites Festa Mágica ✨</title>
-</head>
-<body style="font-family: Arial, sans-serif; padding: 40px; background-color: #fff0fb; color: #333;">
-  <h1 style="text-align: center;">🎉 Bem-vindo à Festa Mágica!</h1>
-  <p style="text-align: center;">Convites animados e personalizados para encantar desde o primeiro momento!</p>
-
-  <h2 style="text-align: center;">✨ Exemplo de convite animado</h2>
-  <div style="text-align:center; margin-bottom: 30px;">
-    <iframe width="300" height="533" src="https://www.youtube.com/embed/VqXEVFbJ_Rk" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <h2 style="text-align: center;">📝 Envie os dados da festa</h2>
-  <form
-    action="https://formspree.io/f/mwpodpbq"
-    method="POST"
-    onsubmit="window.location.href='obrigado.html'; return false;"
-    style="max-width: 600px; margin: 0 auto;"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convites Festa Mágica ✨</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fff0fb;
+      color: #333;
+    "
   >
-    <label>Nome da criança:
-      <input type="text" name="nome_crianca" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
-    </label><br><br>
+    <h1 style="text-align: center">🎉 Bem-vindo à Festa Mágica!</h1>
+    <p style="text-align: center">
+      Convites animados e personalizados para encantar desde o primeiro momento!
+    </p>
 
-    <label>Idade:
-      <input type="number" name="idade" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
-    </label><br><br>
+    <h2 style="text-align: center">✨ Exemplo de convite animado</h2>
+    <div style="text-align: center; margin-bottom: 30px">
+      <iframe
+        width="300"
+        height="533"
+        src="https://youtube.com/embed/UvkhTBMd0G0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
 
-    <label>Tema da festa:
-      <input type="text" name="tema" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
-    </label><br><br>
+    <h2 style="text-align: center">📝 Envie os dados da festa</h2>
+    <form
+      action="https://formspree.io/f/mwpodpbq"
+      method="POST"
+      onsubmit="window.location.href='obrigado.html'; return false;"
+      style="max-width: 600px; margin: 0 auto"
+    >
+      <label
+        >Nome da criança:
+        <input
+          type="text"
+          name="nome_crianca"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        /> </label
+      ><br /><br />
 
-    <label>Data do evento:
-      <input type="date" name="data" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
-    </label><br><br>
+      <label
+        >Idade:
+        <input
+          type="number"
+          name="idade"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        /> </label
+      ><br /><br />
 
-    <label>Horário:
-      <input type="time" name="horario" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
-    </label><br><br>
+      <label
+        >Tema da festa:
+        <input
+          type="text"
+          name="tema"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        /> </label
+      ><br /><br />
 
-    <label>Local:
-      <input type="text" name="local" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
-    </label><br><br>
+      <label
+        >Data do evento:
+        <input
+          type="date"
+          name="data"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        /> </label
+      ><br /><br />
 
-    <label>Mensagem personalizada (opcional):
-      <textarea name="mensagem" rows="4" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
-    </label><br><br>
+      <label
+        >Horário:
+        <input
+          type="time"
+          name="horario"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        /> </label
+      ><br /><br />
 
-    <label>Email ou WhatsApp para contato:
-      <input type="text" name="contato" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
-    </label><br><br>
+      <label
+        >Local:
+        <input
+          type="text"
+          name="local"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        /> </label
+      ><br /><br />
 
-    <button type="submit" style="background-color: #d94fc4; color: white; padding: 12px; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer;">
-      Enviar informações ✨
-    </button>
-  </form>
+      <label
+        >Mensagem personalizada (opcional):
+        <textarea
+          name="mensagem"
+          rows="4"
+          style="
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        ></textarea></label
+      ><br /><br />
 
-  <h2 style="text-align: center; margin-top: 40px;">Escolha seu convite mágico ✨</h2>
-  <div style="display: flex; flex-direction: column; gap: 20px; max-width: 600px; margin: 0 auto;">
+      <label
+        >Email ou WhatsApp para contato:
+        <input
+          type="text"
+          name="contato"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        /> </label
+      ><br /><br />
 
-    <a href="https://pay.kiwify.com.br/5BcxPVS" target="_blank">
-      <button style="width: 100%; padding: 15px; background-color: #d94fc4; color: white; font-size: 1.1rem; border: none; border-radius: 10px; cursor: pointer;">
-        🎬 Convite Animado Padrão – R$ 39,90
+      <button
+        type="submit"
+        style="
+          background-color: #d94fc4;
+          color: white;
+          padding: 12px;
+          border: none;
+          border-radius: 8px;
+          font-size: 1rem;
+          cursor: pointer;
+        "
+      >
+        Enviar informações ✨
       </button>
-    </a>
-    <p style="text-align:center; font-size: 0.95rem; color: #444;">Com nome, idade, data, horário, local e tema personalizado.</p>
+    </form>
 
-    <a href="https://pay.kiwify.com.br/oTVP979" target="_blank">
-      <button style="width: 100%; padding: 15px; background-color: #c64ed3; color: white; font-size: 1.1rem; border: none; border-radius: 10px; cursor: pointer;">
-        🧚 Convite com Música Personalizada – R$ 59,90
-      </button>
-    </a>
-    <p style="text-align:center; font-size: 0.95rem; color: #444;">Música criada especialmente para a criança com o tema da festa.</p>
+    <h2 style="text-align: center; margin-top: 40px">
+      Escolha seu convite mágico ✨
+    </h2>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      "
+    >
+      <a href="https://pay.kiwify.com.br/5BcxPVS" target="_blank">
+        <button
+          style="
+            width: 100%;
+            padding: 15px;
+            background-color: #d94fc4;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+          "
+        >
+          🎬 Convite Animado Padrão – R$ 39,90
+        </button>
+      </a>
+      <p style="text-align: center; font-size: 0.95rem; color: #444">
+        Com nome, idade, data, horário, local e tema personalizado.
+      </p>
 
-    <a href="https://pay.kiwify.com.br/Kvx7kug" target="_blank">
-      <button style="width: 100%; padding: 15px; background-color: #a445e1; color: white; font-size: 1.1rem; border: none; border-radius: 10px; cursor: pointer;">
-        🌟 Convite com Animação da Criança – R$ 79,90
-      </button>
-    </a>
-    <p style="text-align:center; font-size: 0.95rem; color: #444;">Você envia a foto e a gente transforma em personagem animado no vídeo!</p>
+      <a href="https://pay.kiwify.com.br/oTVP979" target="_blank">
+        <button
+          style="
+            width: 100%;
+            padding: 15px;
+            background-color: #c64ed3;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+          "
+        >
+          🧚 Convite com Música Personalizada – R$ 59,90
+        </button>
+      </a>
+      <p style="text-align: center; font-size: 0.95rem; color: #444">
+        Música criada especialmente para a criança com o tema da festa.
+      </p>
 
-    <p style="text-align:center; font-size: 0.95rem; color: #666; margin-top: 20px;"><strong>✨ Todos os convites são entregues em até 3 dias úteis após recebimento das informações.</strong></p>
-  </div>
-</body>
+      <a href="https://pay.kiwify.com.br/Kvx7kug" target="_blank">
+        <button
+          style="
+            width: 100%;
+            padding: 15px;
+            background-color: #a445e1;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+          "
+        >
+          🌟 Convite com Animação da Criança – R$ 79,90
+        </button>
+      </a>
+      <p style="text-align: center; font-size: 0.95rem; color: #444">
+        Você envia a foto e a gente transforma em personagem animado no vídeo!
+      </p>
+
+      <p
+        style="
+          text-align: center;
+          font-size: 0.95rem;
+          color: #666;
+          margin-top: 20px;
+        "
+      >
+        <strong
+          >✨ Todos os convites são entregues em até 3 dias úteis após
+          recebimento das informações.</strong
+        >
+      </p>
+    </div>
+  </body>
 </html>
