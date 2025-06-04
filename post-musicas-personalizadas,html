@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Como criamos músicas personalizadas com inteligência artificial
+    </title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #fff8fc;
+      padding: 40px;
+      color: #333;
+      max-width: 800px;
+      margin: auto;
+    "
+  >
+    <h1 style="color: #d94fc4">
+      🎶 Como criamos músicas personalizadas com inteligência artificial
+    </h1>
+    <p style="color: #666">Publicado em 3 de junho de 2025</p>
+
+    <p>
+      Já imaginou a criança ouvir o próprio nome cantado numa música feita só
+      pra ela? 😍 Pois é exatamente isso que a gente faz aqui no
+      <strong>Convites Festa Mágica</strong>!
+    </p>
+
+    <h2 style="color: #a445e1">🔍 Como funciona o processo?</h2>
+
+    <ul>
+      <li>
+        <strong>1. Você nos envia o nome da criança</strong> e o tema da festa.
+      </li>
+      <li>
+        <strong>2. Usamos uma plataforma de inteligência artificial</strong>
+        para gerar uma música personalizada, com letra, melodia e voz infantil.
+      </li>
+      <li>
+        <strong>3. Ajustamos o ritmo e deixamos tudo mágico</strong> para
+        combinar com o estilo do convite animado.
+      </li>
+    </ul>
+
+    <h2 style="color: #a445e1">🎁 Resultado final:</h2>
+    <p>
+      O resultado é um convite musical encantador, onde a criança se sente
+      protagonista de um verdadeiro show! Isso deixa a festa ainda mais
+      inesquecível 💖✨
+    </p>
+
+    <p>
+      <em>Exemplo de como fica:</em> “🎵 Olá, olá, a festa vai começar... a Luna
+      vai comemorar! 🎶”
+    </p>
+
+    <p style="margin-top: 30px">
+      <a href="blog.html" style="color: #a445e1">⬅️ Voltar para o blog</a>
+    </p>
+  </body>
+</html>
