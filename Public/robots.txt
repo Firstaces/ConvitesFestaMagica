@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://convitesfestamagica.vercel.app/sitemap.xml
