@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Convites Animados Infantis Personalizados | Festa Mágica ✨</title>
     <meta name="description" content="Convites animados infantis com música personalizada, personagem da criança e tema da festa! Surpreenda seus convidados com um convite mágico.">
-
   </head>
-  <body
-    style="
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #fff0fb;
-      color: #333;
-    "
-  >
+
+  <body style="
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #fff0fb;
+    color: #333;
+  ">
+    <nav style="background-color: #ffe0f7; padding: 15px 20px; border-radius: 12px; text-align: center; margin-bottom: 30px;">
+      <a href="index.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">🏠 Início</a>
+      <a href="blog.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">📝 Blog</a>
+      <a href="#formulario" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">📩 Enviar Dados</a>
+      <a href="indicacoes.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">💡 Indicações</a>
+    </nav>
+
+
+    
     <h1 style="text-align: center">🎉 Bem-vindo à Festa Mágica!</h1>
     <p style="text-align: center">
       Convites animados e personalizados para encantar desde o primeiro momento!
@@ -132,10 +139,12 @@
 
     <h2 style="text-align: center">📝 Envie os dados da festa</h2>
     <form
-      action="https://formspree.io/f/mwpodpbq"
-      method="POST"
-      onsubmit="setTimeout(() => { window.location.href='obrigado.html'; }, 100);"
-    >
+  id="formulario"
+  action="https://formspree.io/f/mwpodpbq"
+  method="POST"
+  onsubmit="setTimeout(() => { window.location.href='obrigado.html'; }, 100);"
+>
+
       <label
         >Nome da criança:
         <input
