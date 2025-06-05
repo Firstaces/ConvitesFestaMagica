@@ -1,19 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Obrigado! 🎉</title>
-</head>
-<body style="font-family: Arial, sans-serif; background: #fff0f5; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; padding: 2rem;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrigado! 🎉</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background: #fff0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    "
+  >
+    <div
+      style="
+        background: white;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+      "
+    >
+      <h1 style="color: #d94fc4">🎉 Obrigado pelo envio!</h1>
+      <p style="font-size: 1.1rem">Recebemos suas informações com sucesso.</p>
+      <p>Entraremos em contato pelo WhatsApp ou e-mail informado em breve 💌</p>
+      <a
+        href="index.html"
+        style="
+          display: inline-block;
+          margin-top: 1.5rem;
+          padding: 10px 20px;
+          background-color: #d94fc4;
+          color: white;
+          text-decoration: none;
+          border-radius: 8px;
+        "
+        >Voltar para o site</a
+      >
+    </div>
 
-  <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 0 15px rgba(0,0,0,0.1); max-width: 500px;">
-    <h1 style="color: #d94fc4;">🎉 Obrigado pelo envio!</h1>
-    <p style="font-size: 1.1rem;">Recebemos suas informações com sucesso.</p>
-    <p>Entraremos em contato pelo WhatsApp ou e-mail informado em breve 💌</p>
-    <a href="index.html" style="display: inline-block; margin-top: 1.5rem; padding: 10px 20px; background-color: #d94fc4; color: white; text-decoration: none; border-radius: 8px;">Voltar para o site</a>
-  </div>
+    <!-- Aqui o rodapé será carregado dinamicamente -->
+    <div id="footer-placeholder"></div>
 
-</body>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>
