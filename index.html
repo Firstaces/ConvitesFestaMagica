@@ -42,25 +42,73 @@
 }
 </script>
 
-<header style="
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff0f5;
-  border-bottom: 2px solid #d94fc4;
-  flex-wrap: wrap;
-">
-<h1 style="font-size: 1.5rem; color: #d94fc4; margin: 0;">
-    Convites Festa Mágica
-  </h1>
-    <nav style="background-color: #ffe0f7; padding: 15px 20px; border-radius: 12px; text-align: center; margin-bottom: 30px;">
-      <a href="index.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">🏠 Início</a>
-      <a href="blog.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">📝 Blog</a>
-      <a href="#formulario" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">📩 Enviar Dados</a>
-      <a href="indicacoes.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">💡 Indicações</a>
-    </nav>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-bottom: 2px solid #d94fc4;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    color: #d94fc4;
+    margin: 0;
+  }
+
+  nav {
+    background-color: #ffe0f7;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #d94fc4;
+    font-weight: bold;
+    margin: 0 15px;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav {
+      text-align: left;
+      padding: 10px 0;
+    }
+
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+</style>
+
+<header>
+  <h1>Convites Festa Mágica</h1>
+  <nav>
+    <a href="index.html">🏠 Início</a>
+    <a href="blog.html">📝 Blog</a>
+    <a href="#formulario">📩 Enviar Dados</a>
+    <a href="indicacoes.html">💡 Indicações</a>
+  </nav>
 </header>
+
 
     
     <h1 style="text-align: center">🎉 Bem-vindo à Festa Mágica!</h1>
