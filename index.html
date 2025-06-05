@@ -13,13 +13,53 @@
     background-color: #fff0fb;
     color: #333;
   ">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Convite Animado Princesa Sofia",
+  "description": "Exemplo de convite animado personalizado com tema da Princesa Sofia para festas infantis.",
+  "thumbnailUrl": "https://img.youtube.com/vi/UvkhTBMd0G0/maxresdefault.jpg",
+  "uploadDate": "2024-05-10",
+  "duration": "PT0M30S",
+  "embedUrl": "https://www.youtube.com/embed/UvkhTBMd0G0",
+  "contentUrl": "https://convites-festa-magica.vercel.app"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Convite Animado Safari do Lucas",
+  "description": "Exemplo criativo de convite animado com tema de safari para festas infantis.",
+  "thumbnailUrl": "https://img.youtube.com/vi/mmcrj1ADYxM/maxresdefault.jpg",
+  "uploadDate": "2024-05-12",
+  "duration": "PT0M30S",
+  "embedUrl": "https://www.youtube.com/embed/mmcrj1ADYxM",
+  "contentUrl": "https://convites-festa-magica.vercel.app"
+}
+</script>
+<header style="
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-bottom: 2px solid #d94fc4;
+  flex-wrap: wrap;
+">
+<h1 style="font-size: 1.5rem; color: #d94fc4; margin: 0;">
+    Convites Festa Mágica
+  </h1>
     <nav style="background-color: #ffe0f7; padding: 15px 20px; border-radius: 12px; text-align: center; margin-bottom: 30px;">
       <a href="index.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">🏠 Início</a>
       <a href="blog.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">📝 Blog</a>
       <a href="#formulario" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">📩 Enviar Dados</a>
       <a href="indicacoes.html" style="text-decoration: none; color: #d94fc4; font-weight: bold; margin: 0 15px;">💡 Indicações</a>
     </nav>
-
+</header>
 
     
     <h1 style="text-align: center">🎉 Bem-vindo à Festa Mágica!</h1>
@@ -28,49 +68,48 @@
     </p>
 
     <h2 style="text-align: center">✨ Exemplos de convites animados</h2>
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-      "
-    >
-      <iframe
-        width="300"
-        height="533"
-        src="https://youtube.com/embed/UvkhTBMd0G0"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
 
-      <iframe
-        width="300"
-        height="533"
-        src="https://youtube.com/embed/mmcrj1ADYxM"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
+<div
+  style="
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  "
+>
+  <!-- Convite Princesa Sofia -->
+  <div>
+    <h3 style="text-align: center; color: #d94fc4">Convite Princesa Sofia</h3>
+    <iframe
+      width="300"
+      height="533"
+      src="https://www.youtube.com/embed/UvkhTBMd0G0"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <p style="text-align: center; max-width: 300px; margin: 10px auto">
+      Um convite encantador inspirado no mundo mágico da Princesa Sofia! Ideal para uma festa cheia de brilho e fantasia.
+    </p>
+  </div>
 
-    <section
-      style="
-        padding: 40px 20px;
-        background-color: #fff8fc;
-        border-radius: 16px;
-        margin: 40px 0;
-      "
-    >
-      <h2
-        style="
-          text-align: center;
-          color: #d94fc4;
-          font-size: 2rem;
-          margin-bottom: 20px;
-        "
-      >
-        ✨ Tendências e Toques Especiais
+  <!-- Convite Safari -->
+  <div>
+    <h3 style="text-align: center; color: #d94fc4">Convite Safari do Lucas</h3>
+    <iframe
+      width="300"
+      height="533"
+      src="https://www.youtube.com/embed/mmcrj1ADYxM"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <p style="text-align: center; max-width: 300px; margin: 10px auto">
+      Uma aventura selvagem em forma de convite! Perfeito para pequenos exploradores apaixonados por animais.
+    </p>
+  </div>
+</div>
+
+        <h2 style="text-align: center">✨ Tendências e Toques Especiais</h2>
       </h2>
 
       <div
@@ -138,7 +177,7 @@
     </section>
 
     <h2 style="text-align: center">📝 Envie os dados da festa</h2>
-    
+
     <form
   id="formulario"
   action="https://formsubmit.co/animacoeseducativas@gmail.com"
@@ -474,5 +513,16 @@
         >
       </p>
     </div>
+
+    <!-- Aqui o rodapé será carregado dinamicamente -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    fetch("/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
   </body>
 </html>
