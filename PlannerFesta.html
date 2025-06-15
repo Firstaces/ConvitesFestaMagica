@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner de Festa Infantil | Convites Festa Mágica</title>
+    <style>
+      :root {
+        --rosa: #ff69b4;
+        --rosa-escuro: #e055a2;
+        --fundo: #fffafc;
+        --texto: #333;
+        --fonte-principal: "Comic Sans MS", cursive, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--fonte-principal);
+        background: var(--fundo);
+        color: var(--texto);
+        padding: 2rem;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      h1,
+      h2 {
+        color: var(--rosa);
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li {
+        margin: 0.5rem 0;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 0.5rem;
+      }
+
+      button {
+        background: var(--rosa);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 10px;
+        margin-top: 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+      }
+
+      button:hover {
+        background: var(--rosa-escuro);
+      }
+
+      iframe {
+        border: none;
+        width: 100%;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body id="planner-content">
+    <h1>🎉 Planner Mágico de Festa Infantil</h1>
+    <p style="text-align: center">
+      Organize cada detalhe da festinha do seu pequeno com muito carinho! ✨
+    </p>
+
+    <label for="tema">🎈 Tema da Festa:</label>
+    <input type="text" id="tema" placeholder="Digite aqui o tema..." />
+
+    <h2>📋 Checklist de Preparação</h2>
+    <ul>
+      <li><input type="checkbox" /> Escolher o tema</li>
+      <li><input type="checkbox" /> Definir local e data</li>
+      <li><input type="checkbox" /> Criar a lista de convidados</li>
+      <li><input type="checkbox" /> Escolher o convite</li>
+      <li><input type="checkbox" /> Confirmar fornecedores</li>
+      <li><input type="checkbox" /> Comprar descartáveis e lembrancinhas</li>
+      <li><input type="checkbox" /> Preparar playlist</li>
+    </ul>
+
+    <h2>👥 Lista de Convidados</h2>
+    <textarea rows="6" placeholder="Escreva os nomes aqui..."></textarea>
+
+    <h2>📊 Orçamento</h2>
+    <textarea
+      rows="4"
+      placeholder="Ex: Bolo - R$100,00
+Decoração - R$150,00
+Lembrancinhas - R$80,00"
+    ></textarea>
+
+    <h2>🍰 Cardápio da Festa</h2>
+    <textarea rows="4" placeholder="Docinhos, salgados, bebidas..."></textarea>
+
+    <h2>🎨 Ideias de Decoração</h2>
+    <textarea
+      rows="4"
+      placeholder="Balões, painel, centro de mesa..."
+    ></textarea>
+
+    <h2>📲 Pesquisa: App de Festinha!</h2>
+    <p style="text-align: center">
+      Estamos pensando em criar um aplicativo para facilitar ainda mais o
+      planejamento das festinhas. Sua opinião é super importante! 💖
+    </p>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScAA5MJixTKU2iMgo0PAV_lA_9tqwfstscYByirhZQmf4fztw/viewform?embedded=true"
+      width="100%"
+      height="1800"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >Carregando…</iframe
+    >
+
+    <h2>💌 Brinde Especial</h2>
+    <p>Ganhe um convite animado grátis nos temas Safari ou Unicórnios:</p>
+    <button
+      onclick="window.location.href='https://convitesfestamagica.com.br/brinde'"
+    >
+      🎁 Baixar Convite Grátis
+    </button>
+
+    <button onclick="downloadPDF()">🖨️ Salvar como PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script>
+      function downloadPDF() {
+        const element = document.getElementById("planner-content");
+        const opt = {
+          margin: 0.3,
+          filename: "planner_festa_magica.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+        };
+        html2pdf().set(opt).from(element).save();
+      }
+    </script>
+  </body>
+</html>
