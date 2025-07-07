@@ -1,0 +1,1 @@
+export default function Brindes() { return <div>🎁 Brindes Mágicos</div>; }

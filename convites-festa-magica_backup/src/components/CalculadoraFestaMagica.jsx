@@ -1,0 +1,1 @@
+export default function Calculadora() { return <div>🧮 Calculadora de Festa</div>; }

@@ -1,0 +1,1 @@
+export default function Indicacoes() { return <div>💡 Indicações</div>; }

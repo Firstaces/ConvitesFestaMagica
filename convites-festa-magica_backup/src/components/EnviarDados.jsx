@@ -1,0 +1,1 @@
+export default function EnviarDados() { return <div>📩 Formulário de Envio</div>; }

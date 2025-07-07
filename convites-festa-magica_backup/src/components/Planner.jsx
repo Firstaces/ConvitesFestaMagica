@@ -1,0 +1,1 @@
+export default function Planner() { return <div>📒 Planner para sua Festa</div>; }
